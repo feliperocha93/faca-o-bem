@@ -1,0 +1,5 @@
+@mixin dosis($color, $size) {
+  color: $color;
+  font-size: $size;
+  font-family: "Dosis", sans-serif;
+}
