@@ -1,5 +1,14 @@
 <template>
-  <p>Home</p>
+  <section class="banner">
+    <h2>Projeto Faça o Bem</h2>
+    <p>
+      Ajude-nos a ajudar alguém, <br />
+      juntos somos mais fortes
+    </p>
+    <span
+      >Saiba <router-link to="/" class="link">como ajudar</router-link></span
+    >
+  </section>
 </template>
 
 <script lang="ts">
@@ -10,4 +19,8 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.banner {
+  background: url("../assets/banner-faca-o-bem.jpg");
+}
+</style>
