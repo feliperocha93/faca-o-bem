@@ -15,19 +15,17 @@
       </v-col>
       <v-col class="d-flex align-center">
         <nav class="ml-auto nav-list d-flex align-center">
-          <router-link to="/">Sobre</router-link>
-          <router-link to="/">Como ajudar</router-link>
-          <router-link to="/">Fale Conosco</router-link>
-          <router-link to="/">
-            <v-btn
-              id="btn-doar"
-              color="#4db055"
-              height="38px"
-              link="true"
-              to="/"
-              >Doe Agora</v-btn
-            >
-          </router-link>
+          <router-link to="/sobre">Sobre</router-link>
+          <router-link to="/como-ajudar">Como ajudar</router-link>
+          <router-link to="/fale-conosco">Fale Conosco</router-link>
+          <v-btn
+            id="btn-doar"
+            color="#4db055"
+            height="32px"
+            link="true"
+            to="/doe-agora"
+            >Doe Agora</v-btn
+          >
         </nav>
       </v-col>
     </v-container>
@@ -50,7 +48,7 @@ h1 {
   @include dosis($base-5, $s18);
 }
 
-.nav-list .router-link-active {
+.nav-list a {
   @include dosis($cinza-escuro-2, $s18);
   padding: 0 16px;
 }
