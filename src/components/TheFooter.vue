@@ -90,7 +90,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 footer {
   background: $base-5;
-  font-size: $s14;
+  font-size: 11px;
   font-weight: 300;
   color: $cinza-claro-1;
 }

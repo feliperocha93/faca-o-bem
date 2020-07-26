@@ -1,35 +1,58 @@
 <template>
   <section>
-    <v-container py-8>
-      <v-row>
-        <v-col cols="3">
+    <v-container py-8 class="d-flex justify-center">
+      <v-row class="nav-list">
+        <v-col cols="6">
           <h3>Mapa do site</h3>
-          <router-link to="/">Sobre</router-link>
-          <router-link to="/">Quem já ajudou</router-link>
-          <router-link to="/">Doação Material</router-link>
-          <router-link to="/">Doação Virtual</router-link>
-          <router-link to="/">Seja voluntário</router-link>
+          <v-row no-gutters>
+            <v-col cols="6">
+              <router-link to="/sobre">Sobre</router-link>
+              <router-link to="/sobre">Quem já ajudou</router-link>
+              <router-link to="/como-ajudar">Doação Material</router-link>
+              <router-link to="/como-ajudar">Doação Virtual</router-link>
+              <router-link to="/como-ajudar">Seja voluntário</router-link>
+            </v-col>
+            <v-col cols="6">
+              <router-link to="/fale-conosco">Fale Conosco</router-link>
+              <router-link to="/fale-conosco">Zona Oeste</router-link>
+              <router-link to="/fale-conosco">Zona Sul</router-link>
+              <router-link to="/fale-conosco">Região do ABC</router-link>
+              <router-link to="/doe-agora" id="doar">Doar</router-link>
+            </v-col>
+          </v-row>
         </v-col>
-        <v-col cols="3" class="mt-7">
-          <router-link to="/">Fale Conosco</router-link>
-          <router-link to="/">Zona Oeste</router-link>
-          <router-link to="/">Zona Sul</router-link>
-          <router-link to="/">Região do ABC</router-link>
-          <button>Doar</button>
-        </v-col>
+
         <v-col cols="3">
           <h3>Contato</h3>
-          <ul>
+          <ul class="list-style ">
             <li>matheus@hotmail.com</li>
             <li>(11) 99999-9999</li>
             <li>matheus@hotmail.com</li>
             <li>(11) 99999-9999</li>
           </ul>
         </v-col>
-        <v-col>
+        <v-col class="d-flex flex-column">
           <h3>Redes Sociais</h3>
-          <button>Facebook</button>
-          <button>Instagram</button>
+          <v-btn
+            outlined
+            class="social-btn mb-4 py-2"
+            color="#8B243F"
+            height="auto"
+            link
+            href="https://www.facebook.com/projetoofacaobem"
+            target="_blank"
+            >Facebook</v-btn
+          >
+          <v-btn
+            outlined
+            class="social-btn py-2"
+            color="#8B243F"
+            height="auto"
+            link
+            href="https://www.instagram.com/projetoofacaobem/"
+            target="_blank"
+            >Instagram</v-btn
+          >
         </v-col>
       </v-row>
     </v-container>
@@ -48,8 +71,43 @@ export default Vue.extend({
 section {
   background-color: $cinza-claro-3;
 }
-a,
-button {
-  display: block;
+
+h3 {
+  color: $base-5;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.nav-list a {
+  color: $cinza-escuro-1;
+  font-size: $s12;
+  line-height: 1.1;
+  display: table;
+}
+
+ul li,
+.nav-list a:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+.nav-list .router-link-exact-active {
+  color: $base-5;
+}
+
+#doar {
+  color: $acentuacao-3;
+  font-weight: 700;
+}
+
+ul li {
+  color: $cinza-escuro-1;
+  font-size: $s12;
+  line-height: 1.1;
+}
+
+.social-btn {
+  text-transform: none;
 }
 </style>

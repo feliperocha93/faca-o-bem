@@ -18,13 +18,10 @@
           <router-link to="/sobre">Sobre</router-link>
           <router-link to="/como-ajudar">Como ajudar</router-link>
           <router-link to="/fale-conosco">Fale Conosco</router-link>
-          <v-btn
-            id="btn-doar"
-            color="#4db055"
-            height="32px"
-            link="true"
-            to="/doe-agora"
-            >Doe Agora</v-btn
+          <router-link to="/doe-agora"
+            ><v-btn id="btn-doar" color="#4db055" height="32px"
+              >Doe Agora</v-btn
+            ></router-link
           >
         </nav>
       </v-col>
