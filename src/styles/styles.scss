@@ -11,7 +11,11 @@
   color: $acentuacao-3;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  text-decoration: none;
+}
+
+.nav-list .router-link-active:hover {
+  color: $acentuacao-3;
+  transition: all 0.3s;
 }
 
 .v-enter,
