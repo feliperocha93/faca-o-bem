@@ -66,7 +66,12 @@
       <v-container>
         <v-row class="justify-center flex-column text-center">
           <h2 class="titulo-secao">Nossos Parceiros</h2>
-          <div class="content">CONTEÚDO PROVISÓRIO</div>
+          <div class="pa-4">
+            <img
+              :src="require('@/assets/parceiros-faca-o-bem.jpeg')"
+              class="mx-auto"
+            />
+          </div>
         </v-row>
       </v-container>
     </section>

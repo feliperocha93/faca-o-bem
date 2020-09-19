@@ -6,17 +6,14 @@
           <h3>Mapa do site</h3>
           <v-row no-gutters>
             <v-col cols="6">
-              <router-link to="/sobre">Sobre</router-link>
-              <router-link to="/sobre">Quem já ajudou</router-link>
-              <router-link to="/como-ajudar">Doação Material</router-link>
-              <router-link to="/como-ajudar">Doação Virtual</router-link>
-              <router-link to="/como-ajudar">Seja voluntário</router-link>
+              <router-link to="/sobre#introducao">Sobre</router-link>
+              <router-link to="/sobre#nosso-time">Nosso Time</router-link>
+              <router-link to="/como-ajudar#0">Doação Material</router-link>
+              <router-link to="/como-ajudar#1">Doação Virtual</router-link>
+              <router-link to="/como-ajudar#2">Seja voluntário</router-link>
             </v-col>
             <v-col cols="6">
               <router-link to="/fale-conosco">Fale Conosco</router-link>
-              <router-link to="/fale-conosco">Zona Oeste</router-link>
-              <router-link to="/fale-conosco">Zona Sul</router-link>
-              <router-link to="/fale-conosco">Região do ABC</router-link>
               <router-link to="/doe-agora" id="doar">Doar</router-link>
             </v-col>
           </v-row>
@@ -63,7 +60,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "TheMap"
+  name: "TheMap",
 });
 </script>
 

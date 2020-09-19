@@ -1,6 +1,10 @@
 <template>
   <section class="como-ajudar py-16">
-    <v-container v-for="sessao in sessoes" :key="sessao.titulo">
+    <v-container
+      v-for="(sessao, index) in sessoes"
+      :key="sessao.titulo"
+      :id="index"
+    >
       <v-row class="d-flex align-center">
         <v-col class="col-12 col-md-6 coluna-titulo">
           <router-link to="/fale-conosco" class="link">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="introducao py-16">
+    <section class="introducao py-16" id="introducao">
       <v-container>
         <v-row>
           <v-col cols="12">
@@ -30,7 +30,7 @@
       </v-container>
     </section>
 
-    <section class="nosso-time py-16">
+    <section class="nosso-time py-16" id="nosso-time">
       <v-container>
         <v-row>
           <h2 class="titulo-secao mx-auto mb-8">Nosso Time</h2>
@@ -82,7 +82,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "Sobre"
+  name: "Sobre",
 });
 </script>
 
