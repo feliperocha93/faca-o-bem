@@ -140,9 +140,11 @@
               precisa se identificar, a menos que queira. Junte-se a nossa
               causa.
             </p>
-            <v-btn color="#4db055" height="32px" class="my-2 my-md-0"
-              >Doe agora</v-btn
-            >
+            <router-link to="/doe-agora">
+              <v-btn color="#4db055" height="32px" class="my-2 my-md-0"
+                >Doe agora</v-btn
+              >
+            </router-link>
           </v-col>
         </v-row>
       </v-container>
