@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <v-container class="py-4">
+    <v-container class="py-4 px-2 px-md-0">
       <ul>
         <li>
           Icons made by
@@ -80,9 +80,6 @@ export default Vue.extend({
   components: {
     IconBase,
     CaridadeCoracaoMini
-  },
-  created() {
-    console.log();
   }
 });
 </script>
@@ -90,13 +87,13 @@ export default Vue.extend({
 <style lang="scss" scoped>
 footer {
   background: $base-5;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 300;
   color: $cinza-claro-1;
 }
 
 li:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 svg {

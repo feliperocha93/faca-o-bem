@@ -1,8 +1,8 @@
 <template>
   <section>
-    <v-container py-8 class="d-flex justify-center">
+    <v-container py-8 class="d-flex justify-center px-8 px-md-0">
       <v-row class="nav-list">
-        <v-col cols="6">
+        <v-col cols="12" md="6" class="mb-8 mb-md-0">
           <h3>Mapa do site</h3>
           <v-row no-gutters>
             <v-col cols="6">
@@ -22,7 +22,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="3">
+        <v-col cols="6" md="3">
           <h3>Contato</h3>
           <ul class="list-style ">
             <li>matheus@hotmail.com</li>
@@ -31,7 +31,7 @@
             <li>(11) 99999-9999</li>
           </ul>
         </v-col>
-        <v-col class="d-flex flex-column">
+        <v-col class="d-flex flex-column" cols="6" md="3">
           <h3>Redes Sociais</h3>
           <v-btn
             outlined
