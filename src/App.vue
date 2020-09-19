@@ -22,11 +22,11 @@ export default Vue.extend({
   components: {
     TheHeader,
     TheMap,
-    TheFooter
+    TheFooter,
   },
   created() {
     document.title = "Projeto Faça o Bem";
-  }
+  },
 });
 </script>
 
@@ -40,6 +40,4 @@ export default Vue.extend({
 #main-vue {
   flex: 1;
 }
-
-//relative e top no footer
 </style>
